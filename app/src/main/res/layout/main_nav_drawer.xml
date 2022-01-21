@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profil"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/gear"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/navy"
+        android:textStyle="bold"
+        android:fontFamily="@font/dmsans_regular"
+        android:textSize="26sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Super Admin"
+        android:fontFamily="@font/dmsans_regular"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/akses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multisite"
+        android:fontFamily="@font/dmsans_regular"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost Database"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/versi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Versi 1.1.2022"
+        android:fontFamily="@font/dmsans_regular"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/keluar"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/ic_baseline_logout_24"
+            android:text="Keluar"
+            android:onClick="Keluar"
+            android:textAllCaps="false"
+            android:textColor="@color/navy" />
+    </RelativeLayout>
+
+</LinearLayout>
